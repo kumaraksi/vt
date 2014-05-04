@@ -1,0 +1,638 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Vikas Transline</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link rel="shortcut icon" href="img/logo.gif">       
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_slider.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+       <script> 
+// <!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+ // JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+      	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -50}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+
+<body>
+<header id="header">	 
+	<nav id="nav">
+	    <ul>
+	    <li><a href="#slide1" title="Home" >HOME</li>
+	    <li><a href="#slide2" title="About Us" >ABOUT</a></li>
+	    <li><a href="#slide3" title="Services">SERVICES</a></li>
+	    <li><a href="#slide4" title="Our Clients">OUR CLIENTS</a></li>
+	    <li><a href="#copyright" title="Contact Us">CONTACT US</a></li>
+	    </ul>
+	</nav>
+
+	<div id="follow"><a href="https://www.facebook.com/h2omollo" target="_blank"><img src="img/facebook-4-32.png"/></a>
+		<a href="https://www.twitter.com/h2omowater" target="_blank"><img src="img/twitter-4-32.png"/></a>
+		<a href="http://www.instagram.com/h2omowater" target="_blank"><img src="img/instagram-4-32.png"/></a>
+	</div>
+	
+	</header>
+	<div id="slide1">
+		<div class="content">
+			<div class="text">
+			<h1>Vikas Transline</h1>
+			<p>Our mission is to provide best services of bus and other four wheeler transport as per customers requirements.</p>
+			<a href="#" class="da-link">Learn more</a>
+			<a href="#slide2" class="scroll"><span class="da-img"> </span> </a>			
+			</div>
+		</div> 
+    </div> 
+	
+	<div id="slide2">
+		<div class="content">
+		            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco"><img src="img/slides/1.jpg"></div>
+							<h2>Vikas Transline</h2>
+							<blockquote><p>, formerly known as Vikas Travels , introduces itself as one of the leading bus operators, centrally located at Airoli, Navi Mumbai. We are in the field of bus transport service, A.C. – Non A.C. four – Wheelers as Tata Sumo, Tata Indica, Qualis, Tempo Travelers, etc under kind control of the company on monthly basis or as per company requirement. We like to inform you that we are in this field of bus transport from last 20 years.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="deco"><img src="img/slides/2.jpg"></div>
+							<h2>M/s Binwa Coach Builders</h2>
+							<blockquote><p>Excellence in services with total satisfaction of our customers is the motto of our company. To fulfill the requirements of our costumers we are available 24 hours a day and 31 days a month. We have our own Garage as well as bus body fabrication in name of M/s Binwa Coach Builders.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco"><img src="img/slides/3.jpg"></div>
+							<h2>Customer First</h2>
+							<blockquote><p>We always work as an extended arm of our clients admin team with total transparency. This helps our customers to relax and use their resources and time for other important jobs. In the past 20 years we have transformed the travel/transport process using technology to create leading edge approach, vitrually removing paper from our internal operations, optimum utilization of kms and controlling per fit cost, delivering service of acceptable quality.</p></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco"><img src="img/slides/4.jpg"></div>
+							<h2>Our Staff</h2>
+							<blockquote><p>All our drivers are smart and well behaved with a sound background who are well familiar with all the areas and suburbs. All the drivers carry a valid driving license and are also well uniformed.</p></blockquote>
+						</div>
+					</div>
+					
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->	   	
+
+		</div> 
+		<a href="#slide3" class="scroll"><span class="da-img down-link"> </span> </a>
+	</div>	
+	
+	<div id="slide3">
+		<div class="content">
+			<div class="text">
+				<h2>SERVICES</h2>
+				<p>We have designed our services with the needs of our customers and clients in mind.Rapid, accurate, timely in timing of the agents, last moment changes, immediate ramp of staff. We have capacity to cater to any volume of staff at the shortest notice and with quality service. we offer 24 / 7 hr service to our customers. We provide bus transportation & four wheelers on rent to our customer as per their requirement. We use easy and user friendly systems. We provide educated and Knowledgeable staff, who can understand the customers requirement easily. We give our Clients unprecedented personal access to information about all the reports. We provide training to our staff and drivers.Route map analysis, Vehicle tracking, Pick-up / drop co-ordination, Safety measures, Vehicle / driver co-ordination, Vehicle papaer updation, Vehicle inspection for road worthiness, Data entry, Rostering, Preparing reports are all the part of our service. 
+				</p>
+				<p>Our Mission is to provide the best services of bus transport as well as other four wheelers to the clients as per their requirement. Under the able leadership of Mr. Sudesh Kumar Sharma we have been striving to provide complete customer satisfaction for the last 20 years . 
+				</p>
+			</div>
+              	   	<div class="image">
+			</div>
+    </div> 
+    		<a href="#slide4" class="scroll"><span class="da-img down-link"> </span> </a>
+	</div>
+	
+	<div id="slide4">
+		<div class="content">
+			<ul id="filters" class="clearfix">
+				<li><span class="filter active" data-filter="A C D J L N P R S T U">All</span></li>
+				<li><span class="filter" data-filter="A">A</span></li>
+				<li><span class="filter" data-filter="C">C</span></li>
+				<li><span class="filter" data-filter="D">D</span></li>
+				<li><span class="filter" data-filter="J">J</span></li>
+				<li><span class="filter" data-filter="L">L</span></li>
+				<li><span class="filter" data-filter="N">N</span></li>
+				<li><span class="filter" data-filter="P">P</span></li>
+				<li><span class="filter" data-filter="R">R</span></li>
+				<li><span class="filter" data-filter="S">S</span></li>
+				<li><span class="filter" data-filter="T">T</span></li>
+				<li><span class="filter" data-filter="U">U</span></li>
+			</ul>
+			<div id="portfoliolist">
+				<div class="portfolio A" data-cat="A">
+					<div class="portfolio-wrapper">						<img src="img/logo/4.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">ANS Soft Technologies Pvt. Ltd.</a>
+								<span class="text-category">Mahape</span>	
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio C" data-cat="C">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/coromandel.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Coromandel Fertiliser Ltd.</a>
+								<span class="text-category">Mahape</span>	
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio C" data-cat="C">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/color.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Colour Chem. Ltd.</a>
+								<span class="text-category">Thane</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio C" data-cat="C">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/caliber.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Calibar Point Ltd.</a>
+								<span class="text-category">Mahape</span>	
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio D" data-cat="D">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/dav.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">D. A. V. Public School</a>
+								<span class="text-category">Airoli</span>	
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio D" data-cat="D">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/dav.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">D. A. V. Public School</a>
+								<span class="text-category">Mulund</span>	
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio D" data-cat="D">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/dna.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">DNA</a>
+								<span class="text-category">Mahape</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio J" data-cat="J">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/jnpt.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">JNPT</a>
+								<span class="text-category">JNPT</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio L" data-cat="L">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/lt.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">L & T Ltd.</a>
+								<span class="text-category">Powai</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio N" data-cat="N">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/nelito.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Nelito Systems Ltd.</a>
+								<span class="text-category">Nelito</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio P" data-cat="P">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/patni.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Patni Computer Systems Ltd.</a>
+								<span class="text-category">Navi Mumbai</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio P" data-cat="P">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/patni.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Patni Computer Systems Ltd.</a>
+								<span class="text-category">Seepz</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio P" data-cat="P">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/plastica.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Plastica Industries</a>
+								<span class="text-category">Rabale</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio P" data-cat="P">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/panacea.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Panacea Biotec Ltd. “Grand”</a>
+								<span class="text-category">Mahape</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio P" data-cat="P">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/piramal.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Piramal Health Care Centre</a>
+								<span class="text-category">Mulund</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio R" data-cat="R">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/rli.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Reliance Life Insurance Co. Ltd.</a>
+								<span class="text-category">Mahape</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio S" data-cat="S">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/shalimar.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Shalimar Industries</a>
+								<span class="text-category">Rabale</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio T" data-cat="T">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/tcs.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Tata Consultancy Services</a>
+								<span class="text-category">Borivali</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio U" data-cat="U">
+					<div class="portfolio-wrapper">			
+						<img src="img/logo/uhde.jpg" alt="" />
+						<div class="label">
+							<div class="label-text">
+								<a class="text-title">Uhde India</a>
+								<span class="text-category">Vikhroli</span>
+							</div>
+							<div class="label-bg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		    		<a href="#copyright" class="scroll"><span class="da-img down-link"> </span> </a>	
+	</div>		
+
+	<div id="slide5">
+		<div class="content">
+			<div class="text">
+				<div class="col-three">
+		        			<h2><span id="contact"></span> CONTACT US</h2>
+			                          <div class="table">
+			                              <div class="row">
+			                                   <div class="col-40 col"><span id="profile"></span> Propertier : </div>
+			                                   <div class="col-60 col">Mr. Sudesh Kumar Sharma</div>
+			                              </div>
+			                              <div class="row gap">
+			                                   <div class="col-40 col"><span id="address"></span> Address : </div>
+			                                   <div class="col-60 col">R 502 ,</div>
+			                              </div>
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right">Rabale MIDC Area,</div>
+			                              </div>
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right">Navi Mumbai - 400701</div>
+			                              </div>
+			                              <div class="row gap">
+			                                   <div class="col col-40"><span id="phone"></span> Phone :</div>  
+			                                   <div class="col col-60">Mr. Kulbhushan Joshi</div>
+			                              </div>     
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right"><span></span>022-2769-2910</div>
+			                              </div>
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right"><span></span>022-2769-9272</div>
+			                              </div>
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right"><span></span>+91-9322296750</div>
+			                              </div>
+			                              <div class="row gap">
+			                                   <div class="col col-40"><span id="email"></span> E-Mail : </div>
+			                                   <div class="col col-60"><span></span>kbjoshi123@yahoo.co.in</div>
+			                              </div>
+			                              <div class="row">
+			                                   <div class="col col-60 pull-right"><span></span>vikastravels@excite.com</div>
+			                              </div>
+			                         </div>
+				</div>
+				<div class="col-three">
+					<form action="#" method="POST" id="contact">       	
+						<div class="personal-details">
+				        			<h2><span id="mail"></span> MAIL US</h2>
+				        			<div class="row"><input id="name" type="name" required="required" autocomplete="off" placeholder="Name"/></div>
+							<div class="row"><input id="mail" type="email" required="required" autocomplete="off" placeholder="Email"/></div> 	
+							<div class="row"><input id="phone" type="textbox" autocomplete="off" placeholder="Phone"/></div>
+							<div class="row"><textarea placeholder="Message" required="required" id="mssg" autocomplete="off"></textarea></div>
+				    			<div class="row"><input type="submit" value="SEND"/></div> 	
+						</div>
+				    	</form>   
+				</div>
+				<div class="col-three">
+		        			<h2><span id="map"></span> FIND US AT</h2>
+        			                                 <iframe height="325px" width="90%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="margin-left:5%;margin-top:10px" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=vikas+travel&amp;ie=UTF8&amp;t=m&amp;sll=19.159078,73.000208&amp;sspn=0.002873,0.005284&amp;st=106409184642993523993&amp;rq=1&amp;ev=zi&amp;split=1&amp;hq=vikas+travel&amp;hnear=&amp;ll=19.16483,73.000417&amp;spn=0.019458,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+				</div>
+			</div>
+		</div> 
+
+        		<a href="#slide1" class="scroll"><span class="up-link"> </span> </a>
+	</div>	  
+<footer id="copyright"><a>
+	Copyright 2013 Vikas Transline Pvt. Ltd. All Rights Reserved</a>
+</footer>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.message').children("textarea").keydown(function(event) {
+    if (event.keyCode == 13) {
+    	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    	var email = document.getElementById('mail');
+    	if (filter.test(email.value)) {
+        $(this.form).submit()
+        return false;
+     }
+     else alert("Invalid e-mail");}
+     	});
+$('#contact').submit(function(event) {
+event.preventDefault();
+
+var name=$('#name').val();
+var mail=$('#mail').val();
+var phone=$('#phone').val();
+var mssg=$('#mssg').val();
+
+var postdata={
+	'name':name,
+	'mail':mail,
+	'phone':phone,
+	'mssg':mssg
+};
+
+$.ajax({
+	url: 'php/contact.php',
+	type: 'POST',
+	data: postdata,
+	success: function(data){
+		alert(data);
+	},
+	error: function(){
+		alert('error');
+	},
+});
+
+});
+});
+
+</script>
+</body>
+</html>
