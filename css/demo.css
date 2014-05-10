@@ -1,15 +1,14 @@
 /* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face
+{
+font-family:mainFont-bold;
+src: url('../font/Merriweather/Merriweather-Bold.ttf');     
+} 
 
-@font-face {
-    font-family: 'AnimalsNormal';
-    src: url('fonts/animals-webfont.eot');
-    src: url('fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/animals-webfont.woff') format('woff'),
-         url('fonts/animals-webfont.ttf') format('truetype'),
-         url('fonts/animals-webfont.svg#AnimalsNormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@font-face
+{
+font-family:mainFont;
+src: url('../font/Merriweather/Merriweather-Light.ttf');     
 }
 
 html { height: 100%; }
@@ -32,7 +31,7 @@ html { height: 100%; }
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'mainFont', sans-serif;
     background: #fff;
     font-weight: 300;
     font-size: 15px;
@@ -106,7 +105,7 @@ a {
 	text-transform: uppercase;
 	z-index: 9999;
 	position: relative;
-	font-family: Cambria, Georgia, serif;
+	font-family: "mainFont-bold",Cambria, Georgia, serif;
 	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 
