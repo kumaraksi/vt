@@ -90,7 +90,10 @@ h3 {
 	position: relative;
 }
 
-
+.active{
+  color: #fff !important;
+  transition : color 0.3s 0.5s;
+}
 
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 1160px; }
@@ -150,6 +153,7 @@ padding: 100px 0px 100px;
 	float: left;
 	box-shadow: 0px 0px 3px;
 	z-index: 2100;
+  display: none;
 }
 
 #nav { width: 85%; float:left;padding-top: 25px;}
@@ -237,7 +241,9 @@ float: left;
 height:390px;
 }
 #slide1 h1{
-     text-shadow:0px 2px 1px rgba(0, 0, 0, 0.3);  
+      color:#e98c38;
+     text-shadow:1px 1px 1px #444; 
+     filter:dropshadow(color=#444, offx=2 , offy=1); 
 }
 #slide1 .content .text p{
 
@@ -246,7 +252,7 @@ height:390px;
      color: #fff;
      font-family: mainFamily;
      text-align: center;
-     text-shadow:0px 2px 1px rgba(0, 0, 0, 0.5);
+     text-shadow:1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .da-img{
