@@ -1,13 +1,28 @@
+@font-face
+{
+font-family:mainFont-bold;
+src: url('../font/Merriweather/Merriweather-Bold.ttf');     
+} 
+
+@font-face
+{
+font-family:mainFont;
+src: url('../font/Merriweather/Merriweather-Light.ttf');     
+}
+
 #slide2 .content .sl-slider-wrapper {
+	display:block;
 	width: 100%;
-	height: 530px;
+	height: 680px;
 	top: 0;
 	left: 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 }
 
 .demo-2 .sl-slider-wrapper {
 	width: 100%;
-	height: 600px;
+	height: 650px;
 	overflow: hidden;
 	position: relative;
 }
@@ -69,8 +84,7 @@
 	top: 50%;
 	width: 40px;
 	height: 40px;
-	border: 8px solid #ddd;
-	border: 8px solid rgba(150,150,150,0.4);
+	border: 8px solid rgba(200,200,200,0.4);
 	text-indent: -90000px;
 	margin-top: -40px;
 	cursor: pointer;
@@ -83,7 +97,7 @@
 }
 
 .nav-arrows span:hover {
-	border-color: rgba(150,150,150,0.9);
+	border-color: rgba(200,200,200,0.9);
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -103,7 +117,7 @@
 .nav-dots {
 	text-align: center;
 	position: absolute;
-	bottom: 2%;
+	bottom: 5%;
 	height: 30px;
 	width: 100%;
 	left: 0;
@@ -118,10 +132,10 @@
 	border-radius: 50%;
 	margin: 3px;
 	background: #ddd;
-	background: rgba(150,150,150,0.4);
+	background: rgba(150,150,150,0.6);
 	cursor: pointer;
 	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
+		0 1px 1px rgba(255,255,255,0.6), 
 		inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -167,7 +181,7 @@
 	border: 2px dashed rgba(150,150,150,0.4);
 	border-radius: 50%;
 	position: absolute;
-	bottom: 50%;
+	bottom: 46%;
 	left: 50%;
 	margin: 0 0 0 -130px;
 }
@@ -213,13 +227,10 @@
 }
 
 #slide2 .content .sl-slide h2 {
-	color: #000;
 	text-shadow: 0 0 1px #000;
 	padding: 20px;
 	position: absolute;
 	font-size: 34px;
-	font-weight: 700;
-	letter-spacing: 13px;
 	text-transform: uppercase;
 	width: 80%;
 	left: 10%;
@@ -227,6 +238,8 @@
 	line-height: 50px;
 	bottom: 50%;
 	margin: 0 0 -120px 0;
+	font-family:"mainFont-bold", sans-serif !important;
+	font-weight:bold;
 }
 
 #slide2 .content .sl-slide blockquote {
@@ -235,10 +248,10 @@
 	text-align: center;
 	left: 0;
 	font-weight: 400;
-	font-size: 19px;
+	font-size: 22px;
 	line-height: 20px;
 	height: 70px;
-	color: #8b8b8b;
+	color: #fff;
 	z-index: 2;
 	bottom: 50%;
 	margin: 0 0 -200px 0;
@@ -250,6 +263,9 @@
 	width: 72%;
 	max-width: 80%;
 	position: relative;
+	font-size:16px;
+	font-family:"mainFont", sans-serif;
+	font-weight:light;
 }
 
 #slide2 .content .sl-slide blockquote p:before {
@@ -281,18 +297,18 @@
 /* First Slide */
 #slide2 .content .bg-1 .sl-slide-inner,
 #slide2 .content .bg-1 .sl-content-slice {
-	background: #00855C;
+	background: rgba(48, 67, 61, 0.8);
 }
 #slide2 .content .bg-1 h2,
 #slide2 .content .bg-1 blockquote{
 	color: #fff;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
 }
 
 /* Second Slide */
 #slide2 .content .bg-2 .sl-slide-inner,
 #slide2 .content .bg-2 .sl-content-slice {
-	background: #000;
+	background: rgba(140, 142, 114, 0.8);
 }
 
 #slide2 .content .bg-2 [data-icon]:after,
@@ -301,13 +317,13 @@
 }
 
 #slide2 .content .bg-2 blockquote:before {
-	color: #222;
+	color: #fff;
 }
 
 /* Third Slide */
 #slide2 .content .bg-3 .sl-slide-inner,
 #slide2 .content .bg-3 .sl-content-slice {
-	background: #db84ad;
+	background: rgba(104, 97, 82, 0.8);
 }
 
 #slide2 .content .bg-3 .deco {
@@ -334,7 +350,7 @@
 /* Forth Slide */
 #slide2 .content .bg-4 .sl-slide-inner,
 #slide2 .content .bg-4 .sl-content-slice {
-	background: #5bc2ce;
+	background: rgba(42, 51, 35, 0.8);
 }
 
 #slide2 .content .bg-4 .deco {
