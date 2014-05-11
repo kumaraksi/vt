@@ -136,12 +136,12 @@ h3 {
 #slide1 #slide1-over{
   position:absolute;
   top:0; left:0; bottom:0; right:0;
-  background:rgba(68, 68, 40, 0.55);
+  background:rgba(68, 68, 40, 0.45);
   padding: 200px 0px 50px;
 }
 #slide3{
   padding: 110px 0px 80px;
-  background: rgba(114, 68, 50, 0.75);
+  background: #DAEDE2 ;
 
 }
 #slide4{
@@ -151,7 +151,7 @@ h3 {
 }
 #slide5{
   padding: 120px 0px 50px;
-  background: rgba(48, 67, 77, 0.8);
+  background: #74ACAE;
 }
 #slide2{
   background: #DAEDE2;
@@ -296,14 +296,54 @@ height:390px;
      -o-transition: all 0.4s ease-in-out;
      -ms-transition: all 0.4s ease-in-out;
      transition: all 0.4s ease-in-out;
+        animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .da-img:hover{
      width: 50px;
      height: 50px;
      display: block;
      background: url(../img/buttonimgh.png);
+/*         animation-name: jittery;
+*/
 }
- .da-link {
+ 
+ 
+/*@keyframes jittery {
+    10% {
+        transform: translate(-1px, -1px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: translate(1px,1px) scale(.99, .99);
+    }
+    30% {
+        transform: translate(-1px, -1px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: translate(1px, 1px) scale(1, 1);
+    }
+    50% {
+        transform: translate(-1px, -1px) scale(.98, .98);
+    }
+    60% {
+        transform: translate(1px, 1px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: translate(-1px, -1px) scale(1, 1);
+    }
+    80% {
+        transform: translate(1px, 1px) scale(.99, .99);
+    }
+    90% {
+        transform: translate(-1px, -1px) scale(1.01, 1.01);
+    }
+    100% {
+        transform: translate(1px, 1px) scale(.99, .99);
+    }
+}
+*/ .da-link {
      /*background-color: #1BBC9B;*/
      display: block;
      color: #FFF;
@@ -461,7 +501,7 @@ margin:auto;
 #slide3 .content .text p{
   margin-bottom: 27px;
   font-size: 18px;
-  color: #f9f9f9; 
+  color: #7f7f7f; 
   font-family: mainFamily;
   text-align:justify;
 }
@@ -673,11 +713,11 @@ font-size:16px;
 }
 .col-40{
      width: 40%;
-   color:#fff;
+   color:#3f3f3f;
 }
 .col-60{
      width:60%;
-   color:#d2d2d2;
+   color:#4f4f4f;
 }
 .col-50{
      width:50%;
