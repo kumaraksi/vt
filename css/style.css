@@ -66,24 +66,24 @@ span#map:before{
 
 *{
 
-	font-family: mainFont !important;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: mainFont !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
      -moz-box-sizing:border-box;
       box-sizing:border-box;
 }
 body{
-	margin: 0;
-	padding: 0;
-	width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 h1 { 
-	font-weight:normal;
-	font-size: 55px;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+  font-weight:normal;
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -91,7 +91,7 @@ h2 {
    font-size: 40px;
    text-align: center;
    margin: 0;
-	padding: 0;
+  padding: 0;
 }
 
 h3 {
@@ -99,9 +99,9 @@ h3 {
    font-size: 16px;
    text-align: center;
    margin: 5px 0;
-	padding: 0;
-	z-index: 1;
-	position: relative;
+  padding: 0;
+  z-index: 1;
+  position: relative;
 }
 
 .active{
@@ -112,70 +112,71 @@ h3 {
 .clear { clear: both; }
 
 .text{
-	float: left;
+    float: left;
+    width: 65%;
 }
 
 .image{
-	float: left;
+  float: left;
 }
 
 #slide1,#slide2,#slide3,#slide4,#slide5,#slide6{
-	width: 100%;
-	float: left;
-	padding: 120px 0px 50px;
+  width: 100%;
+  float: left;
+  padding: 120px 0px 50px;
      position: relative;
 }
 #slide1{
-	width:100%;
-	height:700px;
-	position:relative;
-	background: url('../img/bg13.jpg') no-repeat #DAEDE2;
-	background-position: center;
+  width:100%;
+  height:700px;
+  position:relative;
+  background: url('../img/bg13.jpg') no-repeat #DAEDE2;
+  background-position: center;
 }
 
 #slide1 #slide1-over{
-	position:absolute;
-	top:0; left:0; bottom:0; right:0;
-	background:rgba(68, 68, 40, 0.55);
-	padding: 200px 0px 50px;
+  position:absolute;
+  top:0; left:0; bottom:0; right:0;
+  background:rgba(68, 68, 40, 0.55);
+  padding: 200px 0px 50px;
 }
 #slide3{
-	padding: 130px 0px 80px;
-	background: rgba(114, 68, 50, 0.75);
+  padding: 110px 0px 80px;
+  background: rgba(114, 68, 50, 0.75);
 
 }
 #slide4{
-	padding: 90px 0px 80px;
-	background: rgba(38, 32, 0, 0.6);
+  padding: 90px 0px 80px;
+  background: #F17272;
     min-height: 700px;
 }
 #slide5{
-	padding: 120px 0px 50px;
-	background: rgba(48, 67, 77, 0.8);
+  padding: 120px 0px 50px;
+  background: rgba(48, 67, 77, 0.8);
 }
 #slide2{
-	background: #DAEDE2;
-	padding:0;
+  background: #DAEDE2;
+  padding:0;
 }
 #slide2 .content{width:100%;}
 #slide1-over .content{width:65%; margin:auto;}
 #slide6{
-	background: #DAEDE2;
+  background: #DAEDE2;
 
 }
 /*= HEADER & NAVIGATION
 --------------------------------------------------------*/
 
 #header { 
-	width: 100%; 
-	/*background-image: -moz-linear-gradient(center bottom , rgb(69, 72, 86) 0%, rgb(107, 110, 123) 100%);*/
-	background-color:#fdfdfd;
-	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1); 
-	height: 80px; 	
-	position: fixed;
-	float: left;
-	box-shadow: 0px 0px 3px;
-	z-index: 2100;
+  width: 100%; 
+  /*background-image: -moz-linear-gradient(center bottom , rgb(69, 72, 86) 0%, rgb(107, 110, 123) 100%);*/
+  background-color:#fdfdfd;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1); 
+  height: 80px;   
+  position: fixed;
+  float: left;
+  box-shadow: 0px 0px 3px;
+  z-index: 2100;
   display: none;
 }
 
@@ -184,24 +185,24 @@ h3 {
 #logo a{margin-left: 8px;}
 #nav ul{
 
-	list-style: none;
-	display: block;
-	list-style: none;
-	width: 100%;
-	height: 100%	
+  list-style: none;
+  display: block;
+  list-style: none;
+  width: 100%;
+  height: 100%  
 }
 
 #nav li{
-	float: left;
-	width: 20%;
-	text-align: center;
-	margin-top:6px;
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top:6px;
 }
 
 #nav li a {color:#222; font-size: 16px; text-decoration: none; font-family:mainFont; text-align: center;-webkit-font-smoothing: subpixel-antialiased;}
 
 #nav ul li ul li a{
-font-size: 16px;	
+font-size: 16px;  
 margin-left: 0px;
 padding: 0px;
 color:#ccc;
@@ -219,17 +220,17 @@ padding: 10px;
 }
 
 #nav ul li:hover > ul{
-	display: block;
-	height: 70px;
-		background:#333745; 
+  display: block;
+  height: 70px;
+    background:#333745; 
 
 }
 
 
 #follow{
-	float: right;
-	margin-right: 50px;
-	margin-top: 22px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 22px;
 }
 
 
@@ -245,19 +246,19 @@ padding: 10px;
 /*= SLIDE 1
 --------------------------------------------------------*/
 #slide1 #slide1-over .text ul{
-	background: url('../img/bg.png');
-	height: 200px;
+  background: url('../img/bg.png');
+  height: 200px;
 }
 
 #slide1 #slide1-over .text ul li{
 
-	display: inline-block;
-	width: 28%;
-	font-size: 22px;
-	padding: 50px 21px;
-	text-align: center;
-	color: #22657D;
-	vertical-align: middle;
+  display: inline-block;
+  width: 28%;
+  font-size: 22px;
+  padding: 50px 21px;
+  text-align: center;
+  color: #22657D;
+  vertical-align: middle;
 }
 #slide1 #slide1-over .content .text{
 width: 100%;
@@ -266,21 +267,21 @@ height:390px;
 }
 #slide1 #slide1-over h1{
      text-shadow:0px 2px 1px rgba(0, 0, 0, 0.3);
-	 margin-bottom:50px;  
-	 font-family:mainFont-bold !important;
-	 color:#fff;
-	 cursor:pointer;
-	 transition:all 0.3s ease-in-out;
+   margin-bottom:50px;  
+   font-family:mainFont-bold !important;
+   color:#fff;
+   cursor:pointer;
+   transition:all 0.3s ease-in-out;
 }
 #slide1 #slide1-over h1:hover{
-	color:#EDEDB8;
+  color:#EDEDB8;
 }
 
 #slide1 #slide1-over .content .text p{
 
      margin-bottom: 27px;
      font-size: 18px;
-	 line-height:1.8em;
+   line-height:1.8em;
      color: #fff;
      font-family: mainFamily;
      text-align: center;
@@ -291,7 +292,7 @@ height:390px;
      width: 50px;
      height: 50px;
      display: block;
-	 z-index:10;
+   z-index:10;
      margin: 2em auto 1em;
      background: url(../img/buttonimg.png);
      -webkit-transition: all 0.4s ease-in-out;
@@ -316,14 +317,14 @@ height:390px;
      text-align: center;
      padding: 7px 12px 5px;
      font-size: 16px;
-	 border:3px solid #fff;
-	 border-radius:3px;
-	 margin-top:100px;
+   border:3px solid #fff;
+   border-radius:3px;
+   margin-top:100px;
 }
  .da-link:hover
 {
      color:#EDEDB8;
-	 border-color:#EDEDB8;
+   border-color:#EDEDB8;
 }
 
 /*= SLIDE 2
@@ -346,15 +347,15 @@ margin-left:5%;
 }
 #slide2 .content .text h2{
 text-align: right;
-	color: #805F3D;	
-	font-size: 60px;
+  color: #805F3D; 
+  font-size: 60px;
 }
 #slide2 .content .text p{
-	margin-bottom: 27px;
-	font-size: 20px;
-	color: #4f4f4f;
-	font-family: mainFamily;
-	text-align: right;
+  margin-bottom: 27px;
+  font-size: 20px;
+  color: #4f4f4f;
+  font-family: mainFamily;
+  text-align: right;
 }
 
 .css-slideshow{
@@ -436,7 +437,7 @@ figure:nth-child(4) {
 
 /*= SLIDE 3 
 --------------------------------------------------------*/
-/*#slide3 .content .image{
+#slide3 .content .image{
 width: 30%;
 float: left;
 height: 430px;
@@ -445,30 +446,31 @@ margin-left:5%;
 box-sizing: border-box;
 -moz-box-sizing: border-box;
 
-}*/
+}
 
 #slide3 .content{
-width: 60%;
+width: 1160px;
 text-align:center;
 margin:auto;
 }
-#slide3 .content .text h2{	
-	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-	color: #fff;	
-	font-size: 50px;
-	font-family:"mainFont-bold", sans-serif !important;
-	font-weight:bold;
-	margin-bottom:30px;
+#slide3 .content .text h2{  
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;  
+  font-size: 50px;
+  font-family:"mainFont-bold", sans-serif !important;
+  font-weight:bold;
+  margin-bottom:30px;
+  color: #805F3D;
 }
 #slide3 .content .text p{
-	margin-bottom: 27px;
-	font-size: 18px;
-	color: #f9f9f9;	
-	font-family: mainFamily;
-	text-align:justify;
+  margin-bottom: 27px;
+  font-size: 18px;
+  color: #f9f9f9; 
+  font-family: mainFamily;
+  text-align:justify;
 }
 #slide3 .down-link{
-  top:80%;
+  top:70%;
 }
 /*= SLIDE 4
 --------------------------------------------------------*/
@@ -493,7 +495,7 @@ margin:auto;
      #filters li span.active {
           background: #d8c48c;
           color:#fff;
-		  border-radius:4px;
+      border-radius:4px;
      }
  
 
@@ -502,13 +504,13 @@ margin:auto;
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      -o-box-sizing: border-box;
-     width:23%;
+     width:15%;
      margin:1%;
      display:none;
      float:left;
      overflow:hidden;
      box-shadow: 0px 1px 2px #262000;
-	 border-radius:3px;
+   border-radius:3px;
 }
 
      .portfolio-wrapper {
@@ -539,9 +541,9 @@ margin:auto;
                position: absolute;
                top:0;
                left:0;
-			   padding:10px;
-			   box-sizing:border-box;
-			   -moz-box-sizing:border-box;
+         padding:10px;
+         box-sizing:border-box;
+         -moz-box-sizing:border-box;
           }
      
           .portfolio .label-text {
@@ -549,7 +551,7 @@ margin:auto;
                position: relative;
                z-index:500;
                padding:5px 8px;
-			   font-size:14px;
+         font-size:12px;
           }
                
                .portfolio .text-category {
@@ -557,12 +559,12 @@ margin:auto;
                     font-size:12px;
                }
 #slide4 .down-link{
-  top:50%;
+  top:70%;
 }
 /*= SLIDE 5 
 --------------------------------------------------------*/
 #slide5 .content .personal-details{
-	float: left;
+  float: left;
      width: 100%;
 }
 #slide5 .text{
@@ -578,11 +580,11 @@ margin:auto;
 }
 
 #slide5 .col-three:first-child{
-	padding-right:20px;
+  padding-right:20px;
 }
 
 #slide5 .col-three:last-child{
-	border-right:0;
+  border-right:0;
 }
 
 #slide5 h2{
@@ -594,14 +596,14 @@ font-weight:bold;
 }
 
 #slide5 .content .personal-details .row{
-	width: 90%;
-	clear: both;
-	margin: 10px auto;
-	margin-top:15px;
+  width: 90%;
+  clear: both;
+  margin: 10px auto;
+  margin-top:15px;
 }
 #slide5 .content .personal-details .row input{
-	width:100%;
-	vertical-align: middle;
+  width:100%;
+  vertical-align: middle;
              margin:0 auto;  
 }
 .row input, .row textarea{
@@ -615,26 +617,26 @@ color: #222;
 }
  
  .row input:focus{
- 	background: #FFF;
+  background: #FFF;
  }
  .row textarea:focus{
      background: #FFF;
  }
 
 .in-label{
-	float: left;
-	height: auto;
-	width: auto;
-	margin-top:8px;
-	font-size: 18px;
-	color:#fff;
+  float: left;
+  height: auto;
+  width: auto;
+  margin-top:8px;
+  font-size: 18px;
+  color:#fff;
 }   
 .req{
 margin-top: 4px;
 }
 
 .req sup{
-	color: red;
+  color: red;
 }
 
 textarea{
@@ -671,15 +673,15 @@ float: left;
 }
 #slide5 .table .row .col{
 float: left;
-font-size:18px;
+font-size:16px;
 }
 .col-40{
      width: 40%;
-	 color:#fff;
+   color:#fff;
 }
 .col-60{
      width:60%;
-	 color:#d2d2d2;
+   color:#d2d2d2;
 }
 .col-50{
      width:50%;
